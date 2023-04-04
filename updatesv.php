@@ -16,8 +16,8 @@
 		<input type="text" id="email" name="email"><br><br>
 		<input type="submit" name="submit" value="Update">
 	</form>
-	<br><br>
-	<a href="index.php">Back to Homepage</a>
+	
+	
 
 	<?php 
 		if(isset($_POST['submit'])) {
