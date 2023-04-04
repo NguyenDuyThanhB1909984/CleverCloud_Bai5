@@ -14,7 +14,7 @@
 		<input type="text" id="dob" name="dob"><br><br>
 		<label for="email">Email:</label>
 		<input type="text" id="email" name="email"><br><br>
-		<input type="submit" name="submit" value="Update">
+		<input type="submit" name="submit" value="Cập nhật">
 	</form>
 	
 	
