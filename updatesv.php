@@ -4,13 +4,13 @@
 	<title>Update Student</title>
 </head>
 <body>
-	<h2>Update Student Information</h2>
+	<h2>Cập nhật thông tin sinh viên</h2>
 	<form action="" method="post">
-		<label for="id">Student ID:</label>
+		<label for="id">ID:</label>
 		<input type="text" id="id" name="id"><br><br>
-		<label for="name">Full Name:</label>
+		<label for="name">Họ tên:</label>
 		<input type="text" id="name" name="name"><br><br>
-		<label for="dob">Date of Birth:</label>
+		<label for="dob">Năm sinh:</label>
 		<input type="text" id="dob" name="dob"><br><br>
 		<label for="email">Email:</label>
 		<input type="text" id="email" name="email"><br><br>
@@ -42,7 +42,7 @@
 
 			if (mysqli_query($conn, $sql)) {
 				echo "Student information updated successfully!";
-				header("Location: index.php");
+				
 			} else {
 				echo "Error updating record: " . mysqli_error($conn);
 			}
