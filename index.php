@@ -10,7 +10,7 @@
 		<li><a href="addsv.php">Thêm sinh viên</a></li>
 		<li><a href="listsv.php">Danh sách sinh viên</a></li>
 		<li><a href="deletesv.php">Xóa sinh viên</a></li>
-		<li><a href="update.php">Cập nhật sinh viên</a></li>
+		<li><a href="updatesv.php">Cập nhật sinh viên</a></li>
 	</ul>
 </body>
 </html>
