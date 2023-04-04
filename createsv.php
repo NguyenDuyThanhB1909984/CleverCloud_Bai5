@@ -7,6 +7,21 @@
     $MYSQL_ADDON_URI= getenv('MYSQL_ADDON_URI');
 
     echo "$MYSQL_ADDON_URI";
+    
+
+    $MYSQL_ADDON_HOST = getenv('MYSQL_ADDON_HOST');
+    $MYSQL_ADDON_PORT = getenv('MYSQL_ADDON_PORT');
+    $MYSQL_ADDON_DB = getenv('MYSQL_ADDON_DB');
+    $MYSQL_ADDON_USER = getenv('MYSQL_ADDON_USER');
+    $MYSQL_ADDON_PASSWORD = getenv('MYSQL_ADDON_PASSWORD');
+
+    $conn = mysqli_connect($MYSQL_ADDON_HOST, $MYSQL_ADDON_USER, $MYSQL_ADDON_PASSWORD, $MYSQL_ADDON_DB);
+
+    if (!$conn) {
+        echo "Error: Connect database\n <BR>";
+    } else {
+        echo "Connect database successfully\n <BR>";
+    }
 
 // Create table
     $sql = "CREATE TABLE B1909984_qlsv (
