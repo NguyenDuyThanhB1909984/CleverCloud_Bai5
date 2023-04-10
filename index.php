@@ -4,13 +4,12 @@
 	<title>Quản lý sinh viên</title>
 </head>
 <body>
-	<h1>Quản lý sinh viên</h1>
+	<h1>Kiểm tra PaaS, ngày 10/4/2023</h1>
+	<h2>Họ tên sinh viên: NGUYEN DUY THANH  :Mã sinh viên: B1909984</h2>
 	<ul>
-		<li><a href="createsv.php">Tạo bảng sinh viên</a></li>
-		<li><a href="addsv.php">Thêm sinh viên</a></li>
-		<li><a href="listsv.php">Danh sách sinh viên</a></li>
-		<li><a href="deletesv.php">Xóa sinh viên</a></li>
-		<li><a href="updatesv.php">Cập nhật sinh viên</a></li>
+		<li><a href="taobang.php">Tạo bảng sinh viên</a></li>
+		<li><a href="themsv.php">Thêm sinh viên</a></li>
+		<li><a href="lietkesv.php">Danh sách sinh viên</a></li>
 	</ul>
 </body>
 </html>
