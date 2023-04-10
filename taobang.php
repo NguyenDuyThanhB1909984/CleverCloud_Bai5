@@ -24,11 +24,12 @@
     }
 
 // Create table
-    $sql = "CREATE TABLE B1909984_qlsv (
+    $sql = "CREATE TABLE B1909984_paas_db (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    ho_ten VARCHAR(30) NOT NULL,
+    masv VARCHAR(10) NOT NULL,
+    hoten VARCHAR(30) NOT NULL,
     nam_sinh INT(4) NOT NULL,
-    email VARCHAR(50),
+    dienthoai VARCHAR(10),
     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
     )";
     
