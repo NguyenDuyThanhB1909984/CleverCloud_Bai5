@@ -3,20 +3,23 @@
 <body>
 <h1>Thêm sinh viên</h1>
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+		<label for="mssv">Mssv:</label><br>
+		<input type="text" id="mssv" name="mssv"><br>
 		<label for="hoten">Họ tên:</label><br>
 		<input type="text" id="hoten" name="hoten"><br>
 		<label for="namsinh">Năm sinh:</label><br>
 		<input type="text" id="namsinh" name="namsinh"><br>
-		<label for="email">Email:</label><br>
-		<input type="text" id="email" name="email"><br><br>
+		<label for="sdt">SDT:</label><br>
+		<input type="text" id="sdt" name="sdt"><br>
 		<input type="submit" name="submit" value="Thêm">
 	</form>
 
 
     <?php
+	$mssv = $_POST["mssv"];
         $hoten = $_POST["hoten"];
-		$namsinh = $_POST["namsinh"];
-		$email = $_POST["email"];
+	$namsinh = $_POST["namsinh"];
+	$sdt = $_POST["sdt"];
 
         $MYSQL_ADDON_HOST = getenv('MYSQL_ADDON_HOST');
         $MYSQL_ADDON_PORT = getenv('MYSQL_ADDON_PORT');
@@ -32,7 +35,7 @@
             echo "Open database successfully\n";
         }
 
-        $sql = "INSERT INTO B1909984_qlsv (ho_ten, nam_sinh, email) VALUES ('$hoten', '$namsinh', '$email')";
+        $sql = "INSERT INTO B1909984_paas_db (masv,hoten, nam_sinh, dienthoai) VALUES ('$mssv','$hoten', '$namsinh', '$sdt')";
         if (mysqli_query($conn, $sql)) {
             echo "User added successfully.";
         } else {
