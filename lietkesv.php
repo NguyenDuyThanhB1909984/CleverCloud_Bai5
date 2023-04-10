@@ -22,15 +22,15 @@
     }
 
     // Lấy dữ liệu từ bảng sinhvien
-    $sql = "SELECT * FROM B1909984_qlsv";
+    $sql = "SELECT * FROM B1909984_paas_db";
     $result = mysqli_query($conn, $sql);
 
     // Hiển thị dữ liệu
     if (mysqli_num_rows($result) > 0) {
     echo "<table>";
-    echo "<tr><th>ID</th><th>Họ tên</th><th>Năm sinh</th><th>Email</th></tr>";
+    echo "<tr><th>ID</th><th>Mssv</th><th>Họ tên</th><th>Năm sinh</th><th>SDT</th></tr>";
     while ($row = mysqli_fetch_assoc($result)) {
-        echo "<tr><td>" . $row["id"] . "</td><td>" . $row["ho_ten"] . "</td><td>" . $row["nam_sinh"] . "</td><td>" . $row["email"] . "</td></tr>";
+        echo "<tr><td>" . $row["id"] . "</td><td>" . $row["masv"] . "</td><td>" . $row["hoten"] . "</td><td>" . $row["nam_sinh"] . "</td><td>" . $row["dienthoai"] . "</td></tr>";
     }
     echo "</table>";
     } else {
